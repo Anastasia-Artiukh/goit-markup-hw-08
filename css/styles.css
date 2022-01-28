@@ -1,0 +1,136 @@
+/*основной цвет шрифта 
+заголовка черный #212121
+фон #E5E5E5
+героя белый #FFFFFF
+текста серый #757575  голубой #2196F3
+в футере ссылки сероватые rgba(255, 255, 255, 0.6)
+бегграунд кнопок #F5F4FA
+*/
+:root {
+  --primary-text-color: #757575;
+  --primary-background-color: #e5e5e5;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --button-background-color: #F5F4FA;
+  --text-accent-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo-1part {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo-2part {
+  font-family: Raleway, sans-serif;
+  color: var(--title-text-color);
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+/*nav*/
+.site-nav .link {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/*contacts-nav*/
+.contacts-nav .contact-link {
+  color: var(--primary-text-color);
+}
+
+.contacts-nav .contact-link:hover,
+.contacts-nav .contact-link:focus {
+  color: var(--accent-color);
+}
+
+/* Заголовки */
+.section-title{
+color: var(--title-text-color);
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.03em;  
+}
+
+/* Герой */
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+ line-height: 1.4;
+text-align: center;
+letter-spacing: 0.06em;
+}
+
+/* Секция */
+.features-title{
+  }
+
+/*footer*/
+.footer-info .footer-address {
+  color: #ffffff;
+}
+
+.footer-info .footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Button */
+.hero-button {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+}
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--button-background-color)
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.button:hover,
+.button:focus{
+  color: var(--text-accent-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
