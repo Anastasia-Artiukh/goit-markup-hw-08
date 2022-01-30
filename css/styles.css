@@ -6,6 +6,7 @@
   --accent-color: #2196f3;
   --button-background-color: #F5F4FA;
   --text-accent-color: #ffffff;
+  --footer-background-color: #2F303A;
 }
 
 body {
@@ -26,6 +27,19 @@ ul {
   color: var(--title-text-color);
   text-decoration: none;
 }
+
+.contact-link, 
+.link{
+font-weight: 500;
+}
+
+.contact-link,
+.footer-info .footer-address,
+.footer-info .footer-contacts{
+text-decoration: none;
+font-style: normal;
+}
+
 .nav-logo{
   font-family: Raleway, sans-serif;
   color: var(--title-text-color);
@@ -37,7 +51,9 @@ ul {
 .logo-accent{  
   color: var(--accent-color); 
 }
-
+.nav-logo .logo-white{
+  color: var(--text-accent-color);
+}
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -77,7 +93,7 @@ letter-spacing: 0.03em;
 color: var(--title-text-color);
 font-weight: 700;
 font-size: 14px;
-line-height: 1,14;
+line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 }
@@ -114,11 +130,15 @@ letter-spacing: 0.06em;
 letter-spacing: 0.03em;
   }
 
+.members .members-text{
+font-size: 16px;
+}
+
 /* Текст в Портфолио */
 .work-list-text{
 color: var(--primary-text-color);  
 font-size: 16px;
-line-height: 1.9px;
+line-height: 1.9;
 letter-spacing: 0.03em;
 }
 
@@ -147,7 +167,7 @@ letter-spacing: 0.03em;
   text-decoration: none;
 }
 
-.button {
+.categories .button {
   color: var(--title-text-color);
   background-color: var(--button-background-color)
   font-family: inherit;
@@ -158,6 +178,12 @@ letter-spacing: 0.03em;
   text-decoration: none;
   cursor: pointer;
 }
+
+.button{
+  font-family: inherit;
+}
+
+
 .button:hover,
 .button:focus{
   color: var(--text-accent-color);
@@ -169,6 +195,10 @@ letter-spacing: 0.03em;
   letter-spacing: 0.03em;
 }
 /*footer*/
+footer{
+  background-color: var(--footer-background-color);
+}
+
 .footer-info .footer-address {
   color: var(--text-accent-color);
 }
