@@ -81,6 +81,13 @@ line-height: 1,14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 }
+.members-title{
+color: var(--title-text-color); 
+font-weight: 500;
+font-size: 16px;
+line-height: 1.12;
+letter-spacing: 0.03em;
+}
 
 /* Заголовки в Портфолио */
 .work-list-item .work-list-title{
