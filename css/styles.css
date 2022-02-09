@@ -156,6 +156,8 @@ h3 {
 .main-nav {
   display: flex;
   align-items: center;
+}
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -184,11 +186,10 @@ h3 {
 
 /* Секции */
 /* Преимущества (без заголовка) */
-.features.container {
+.features.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .features-list-title {
   margin-bottom: 10px;
   color: var(--title-text-color);
@@ -221,12 +222,15 @@ h3 {
 .activity.section-title {
   margin-bottom: 50px;
 }
-.activity-section.container {
+.activity.section {
   padding-bottom: 94px;
 }
 
 /* Наша команда */
-.members.container {
+
+.members.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--button-background-color);
 }
 .members-list .members-text {
@@ -234,11 +238,8 @@ h3 {
 }
 .members-list {
   display: flex;
-  padding-bottom: 94px;
 }
-.members-item:nth-child(-n + 3) {
-  margin-right: 30px;
-}
+
 .members-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -247,8 +248,7 @@ h3 {
   background-color: var(--primary-background-color);
 }
 .members.section-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .members-title {
   color: var(--title-text-color);
@@ -256,15 +256,19 @@ h3 {
   font-size: 16px;
   line-height: 1.12;
   letter-spacing: 0.03em;
-  padding-top: 30px;
   padding-bottom: 10px;
 }
-.members-text {
+.members-box {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
+.members-item:nth-child(-n + 3) {
+  margin-right: 30px;
+}
+
 /* ПОРТФОЛИО */
-.portfolio.container {
+.portfolio.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -319,16 +323,12 @@ h3 {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
 .work-list-link {
   text-decoration: none;
 }
-
-.work-list-title {
-  padding-left: 24px;
-  padding-bottom: 4px;
+.work-list-box {
+  padding: 20px 24px;
 }
 
 /* Button */
@@ -368,7 +368,6 @@ h3 {
 .footer {
   background-color: var(--footer-background-color);
 }
-
 .footer-info .footer-address {
   color: var(--text-accent-color);
 }
@@ -377,13 +376,13 @@ h3 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer.container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .footer.nav {
   margin-bottom: 20px;
 }
 .footer-info-item {
   margin-bottom: 9px;
+}
+.footer.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
