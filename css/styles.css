@@ -160,6 +160,21 @@ h3 {
 .page-header {
   border-bottom: 1px solid #ececec;
 }
+.email-icon,
+.phone-icon {
+  margin-right: 7px;
+  fill: var(--primary-text-color);
+}
+
+.email-icon:hover,
+.phone-icon:hover {
+  fill: var(--accent-color);
+}
+
+.contacts.item {
+  display: flex;
+  align-items: center;
+}
 
 /* Герой */
 .hero-title {
