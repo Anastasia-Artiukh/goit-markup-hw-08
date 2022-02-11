@@ -163,7 +163,6 @@ h3 {
 
 /* Герой */
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
   color: var(--text-accent-color);
   font-weight: 900;
@@ -172,16 +171,25 @@ h3 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.hero.section {
+  max-width: 1600px;
   height: 600px;
-  align-items: center;
-}
-.hero {
-  background-color: var(--footer-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Секции */
