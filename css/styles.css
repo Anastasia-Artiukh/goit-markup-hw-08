@@ -509,3 +509,55 @@ h3 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+/* Иконки футера */
+.join {
+  width: 145px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer.container {
+  display: flex;
+}
+
+.footer-icons {
+  margin-left: 70px;
+}
+
+.footer-icons-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-icons-items {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icons-items:hover {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.footer-icons-items + .footer-icons-items {
+  margin-left: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-accent-color);
+}
+
+.footer-social-icons {
+  fill: currentColor;
+}
