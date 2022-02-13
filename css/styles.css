@@ -76,7 +76,9 @@ h3 {
   font-style: normal;
 }
 .email-icon:hover,
-.phone-icon:hover {
+.phone-icon:hover,
+.email-icon:focus,
+.phone-icon:focus {
   fill: var(--accent-color);
   cursor: pointer;
 }
@@ -103,7 +105,9 @@ h3 {
 .site-nav .link:hover,
 .site-nav .link:focus,
 .footer-info .footer-contacts:hover,
-.footer-info .footer-contacts:focus {
+.footer-info .footer-contacts:focus,
+.footer-info .footer-address:hover,
+.footer-info .footer-address:focus {
   color: var(--accent-color);
 }
 
@@ -287,6 +291,7 @@ h3 {
 .members-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  max-width: 270px;
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   background-color: var(--primary-background-color);
@@ -329,7 +334,8 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-.social-links:hover {
+.social-links:hover,
+.social-links:focus {
   color: var(--text-accent-color);
   background-color: var(--accent-color);
 }
@@ -342,10 +348,12 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-.social-items:hover {
+.social-items:hover,
+.social-items:focus {
   background-color: var(--accent-color);
 }
-.social-items:hover .social-icons {
+.social-items:hover .social-icons,
+.social-items:focus .social-icons {
   fill: var(--text-accent-color);
 }
 
@@ -378,17 +386,20 @@ h3 {
   border-radius: 4px;
 }
 
-.clients-icon:hover {
+.clients-icon:hover,
+.clients-icon:focus {
   border: 1px solid var(--accent-color);
 }
-.clients-icon:hover .clients-svg {
+.clients-icon:hover .clients-svg,
+.clients-icon:focus .clients-svg {
   fill: var(--accent-color);
 }
 .clients-svg {
   fill: currentColor;
 }
 
-.clients-svg:hover {
+.clients-svg:hover,
+.clients-svg:focus {
   fill: var(--accent-color);
 }
 
@@ -436,7 +447,8 @@ h3 {
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
-.work-list-item:hover {
+.work-list-item:hover,
+.work-list-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -552,7 +564,8 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-.footer-icons-items:hover {
+.footer-icons-items:hover,
+.footer-icons-items:focus {
   background-color: var(--accent-color);
   cursor: pointer;
 }
@@ -565,6 +578,11 @@ h3 {
   justify-content: center;
   align-items: center;
   color: var(--text-accent-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
 }
 
 .footer-social-icons {
