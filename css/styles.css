@@ -329,36 +329,19 @@ h3 {
 }
 /* cсылка */
 .social-links {
-  color: #afb1b8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social-links:hover,
-.social-links:focus {
-  color: var(--text-accent-color);
-  background-color: var(--accent-color);
-}
-
-.social-items {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   display: flex;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
-}
-.social-items:hover,
-.social-items:focus {
-  background-color: var(--accent-color);
-}
-.social-items:hover .social-icons,
-.social-items:focus .social-icons {
-  fill: var(--text-accent-color);
+  fill: #afb1b8;
 }
 
-.social-icons {
-  fill: currentColor;
+.social-links:hover,
+.social-links:focus {
+  fill: var(--text-accent-color);
+  background-color: var(--accent-color);
 }
 
 .client.section {
@@ -545,46 +528,35 @@ h3 {
   display: flex;
   align-items: baseline;
 }
-
-.footer-icons {
-  margin-left: 70px;
-}
-
 .footer-icons-list {
   display: flex;
   margin-top: 20px;
 }
-
-.footer-icons-items {
-  width: 40px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer-icons-items:hover,
-.footer-icons-items:focus {
-  background-color: var(--accent-color);
-  cursor: pointer;
-}
-.footer-icons-items + .footer-icons-items {
-  margin-left: 10px;
-}
-
 .footer-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-accent-color);
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--text-accent-color);
 }
-
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
+  border-radius: 50%;
+}
+.footer-icons {
+  margin-left: 70px;
 }
 
-.footer-social-icons {
-  fill: currentColor;
+.footer-icons-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons-items + .footer-icons-items {
+  margin-left: 10px;
 }
