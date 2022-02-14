@@ -101,6 +101,17 @@ h3 {
   color: var(--accent-color);
 }
 
+.link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
 /* Акценты при ховере и фокусе */
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -160,6 +171,9 @@ h3 {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.item .link.current {
+  position: relative;
 }
 .contacts-nav {
   display: flex;
