@@ -477,8 +477,31 @@
         </a>
     </li>
 </ul>
-</div>      
 </div>
+
+<div class="subscription">
+    <p class="subscription-title">Подпишитесь на рассылку</p>
+    <div class="subscription-form">
+    <form>
+        <input type="email" class="subscription-input" placeholder="E-mail">
+    </form>
+    <button type="button" class="subscription-button">
+        Подписаться
+        <svg
+            class="letter-icon"
+            width="24"
+            height="24"
+        >
+            <use href="images/icons.svg#icon-letter"></use>
+        </svg>
+    </button>
+    </div>
+</div>
+
+</div>
+</footer>
+
+
 <!-- МОДАЛКА -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -502,7 +525,7 @@
             <label class="modal-label" for="user-name">Имя</label>
             
             <div class="input-wrapper user">
-                <input type="text" class="modal-input" name="user-name" required id="user-name">
+                <input type="text" class="modal-input" name="user-name" required id="user-name" >
                 <svg
                     class="modal-icon"
                     width="18"
@@ -531,7 +554,7 @@
             <div class="modal-field">
                 <label class="modal-label" for="user-mail">Почта</label>
                 <div class="input-wrapper user">
-                <input type="mail" class="modal-input" name="user-mail" required id="user-mail">
+                <input type="email" class="modal-input" name="user-mail" required id="user-mail">
                 <svg
                     class="modal-icon"
                     width="18"
@@ -559,7 +582,7 @@
                     <use href="images/icons.svg#icon-check"></use>
                 </svg>
                 </span>
-                Соглашаюсь с рассылкой и принимаю Условия договора         
+                Соглашаюсь с рассылкой и принимаю  <a class="conditions" href=""> Условия договора</a>          
                 </label>
         </div>
         <div class="modal-submit-button" >
@@ -570,7 +593,7 @@
 
     </div>
 </div>
-</footer>
+
 <script src="./js/modal.js"></script>
 </body>
 </html>
