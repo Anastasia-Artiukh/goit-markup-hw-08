@@ -1,3 +1,6 @@
+.activity.section {
+  padding-bottom: 94px;
+}
 .activity-list {
   display: flex;
 }
@@ -7,15 +10,15 @@
 .activity.section-title {
   margin-bottom: 50px;
 }
-.activity.section {
-  padding-bottom: 94px;
+.activity-item {
+  position: relative;
 }
-.activity-item .activity-text {
+.activity-text {
   position: absolute;
   display: flex;
+  text-align: center;
   font-weight: 700;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   background-color: rgba(47, 48, 58, 0.8);
@@ -26,9 +29,6 @@
   justify-content: center;
   left: 0;
   bottom: 0;
-}
-.activity-item {
-  position: relative;
 }
 .activity-img {
   display: block;
