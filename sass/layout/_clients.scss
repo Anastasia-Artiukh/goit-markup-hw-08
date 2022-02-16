@@ -1,0 +1,40 @@
+.client.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  justify-content: space-between;
+}
+.client.section-title {
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-item {
+  max-width: 170px;
+}
+.clients-icon {
+  display: block;
+  padding: 16px 32px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: fill var(--primary-transition),
+    border-color var(--primary-transition);
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-icon:hover .clients-svg,
+.clients-icon:focus .clients-svg {
+  fill: var(--accent-color);
+}
+.clients-svg {
+  fill: currentColor;
+  transition: fill var(--primary-transition);
+}
