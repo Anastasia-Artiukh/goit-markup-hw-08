@@ -3,7 +3,7 @@
   padding-bottom: 94px;
   background-color: var(--button-background-color);
 }
-.members-list .members-text {
+.members-text {
   font-size: 16px;
 }
 .members-list {
@@ -17,6 +17,9 @@
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   background-color: var(--primary-background-color);
+  &:nth-child(-n + 3) {
+    margin-right: 30px;
+  }
 }
 .members.section-title {
   margin-bottom: 50px;
@@ -32,7 +35,4 @@
 .members-box {
   padding-top: 30px;
   padding-bottom: 16px;
-}
-.members-item:nth-child(-n + 3) {
-  margin-right: 30px;
 }
