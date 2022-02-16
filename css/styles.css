@@ -843,7 +843,6 @@ h3 {
   text-decoration-line: underline;
   text-decoration-skip-ink: none;
   color: var(--accent-color);
-  padding-left: 3px;
 }
 .subscription {
   margin-left: 93px;
