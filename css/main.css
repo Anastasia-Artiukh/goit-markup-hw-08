@@ -103,8 +103,7 @@ h3 {
   transition: fill var(--primary-transition), background-color var(--primary-transition);
 }
 
-.social-links:hover,
-.social-links:focus {
+.social-links:hover, .social-links:focus {
   fill: var(--text-accent-color);
   background-color: var(--accent-color);
 }
@@ -158,6 +157,10 @@ h3 {
   background-color: var(--primary-background-color);
 }
 
+.modal-button:hover, .modal-button:focus {
+  cursor: pointer;
+}
+
 .modal-button-icon {
   transition: fill var(--primary-transition);
 }
@@ -165,11 +168,6 @@ h3 {
 .modal-button:hover .modal-button-icon,
 .modal-button:focus .modal-button-icon {
   fill: var(--accent-color);
-}
-
-.modal-button:hover,
-.modal-button:focus {
-  cursor: pointer;
 }
 
 .modal-title {
@@ -202,10 +200,13 @@ h3 {
   transition: border-color var(--primary-transition);
 }
 
-.modal-input:hover,
-.modal-input:focus {
+.modal-input:hover, .modal-input:focus {
   border-color: var(--accent-color);
   cursor: pointer;
+}
+
+.modal-input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-field {
@@ -272,17 +273,13 @@ h3 {
   transition: fill var(--primary-transition);
 }
 
-.input-wrapper.user {
-  position: relative;
-}
-
-.modal-input::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
 .modal-input:hover + .modal-icon,
 .modal-input:focus + .modal-icon {
   fill: var(--accent-color);
+}
+
+.input-wrapper.user {
+  position: relative;
 }
 
 .modal-check-text {
@@ -294,7 +291,7 @@ h3 {
   color: var(--primary-text-color);
 }
 
-.modal-check-text span {
+.modal-check-icon {
   width: 15px;
   height: 15px;
   border: 2px solid #303030;

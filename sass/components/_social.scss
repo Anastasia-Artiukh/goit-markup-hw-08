@@ -9,7 +9,6 @@
 .social-items:not(first-child) {
   margin-right: 10px;
 }
-
 .social-links {
   width: 44px;
   height: 44px;
@@ -20,10 +19,9 @@
   fill: #afb1b8;
   transition: fill var(--primary-transition),
     background-color var(--primary-transition);
-}
-
-.social-links:hover,
-.social-links:focus {
-  fill: var(--text-accent-color);
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--text-accent-color);
+    background-color: var(--accent-color);
+  }
 }
