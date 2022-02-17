@@ -1,19 +1,22 @@
-.activity.section {
+.activity {
   padding-bottom: 94px;
 }
-.activity-list {
-  display: flex;
-}
-.activity-item:nth-child(-n + 2) {
-  margin-right: 30px;
-}
-.activity.section-title {
+.activity__title {
   margin-bottom: 50px;
 }
-.activity-item {
+.activity__list {
+  display: flex;
+}
+.activity__item {
   position: relative;
 }
-.activity-text {
+.activity__item:nth-child(-n + 2) {
+  margin-right: 30px;
+}
+.activity__img {
+  display: block;
+}
+.activity__text {
   position: absolute;
   display: flex;
   text-align: center;
@@ -29,7 +32,4 @@
   justify-content: center;
   left: 0;
   bottom: 0;
-}
-.activity-img {
-  display: block;
 }
