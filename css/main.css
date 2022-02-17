@@ -48,10 +48,6 @@ body {
   border-radius: 2px;
 }
 
-.nav-logo__accent {
-  color: var(--accent-color);
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -103,12 +99,10 @@ h3 {
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
-  transition: fill var(--primary-transition),
-    background-color var(--primary-transition);
+  transition: fill var(--primary-transition), background-color var(--primary-transition);
 }
 
-.social-links:hover,
-.social-links:focus {
+.social-links:hover, .social-links:focus {
   fill: var(--text-accent-color);
   background-color: var(--accent-color);
 }
@@ -126,8 +120,7 @@ h3 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--primary-transition),
-    background-color var(--primary-transition);
+  transition: opacity var(--primary-transition), background-color var(--primary-transition);
 }
 
 .backdrop.is-hidden {
@@ -145,8 +138,7 @@ h3 {
   padding: 40px;
   border-radius: 4px;
   background-color: var(--primary-background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .modal-button {
@@ -164,8 +156,7 @@ h3 {
   background-color: var(--primary-background-color);
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.modal-button:hover, .modal-button:focus {
   cursor: pointer;
 }
 
@@ -208,8 +199,7 @@ h3 {
   transition: border-color var(--primary-transition);
 }
 
-.modal-input:hover,
-.modal-input:focus {
+.modal-input:hover, .modal-input:focus {
   border-color: var(--accent-color);
   cursor: pointer;
 }
@@ -394,6 +384,25 @@ h3 {
   fill: var(--text-accent-color);
 }
 
+.nav-logo {
+  font-family: Raleway, sans-serif;
+  color: var(--title-text-color);
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: color var(--primary-transition);
+}
+
+.nav-logo__accent {
+  color: var(--text-accent-color);
+}
+
+.nav-logo__basic {
+  color: var(--accent-color);
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -430,8 +439,7 @@ h3 {
   transition: color var(--primary-transition);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact-link:hover, .contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -441,8 +449,7 @@ h3 {
   transition: fill var(--primary-transition);
 }
 
-.nav-icon:hover,
-.nav-icon:focus {
+.nav-icon:hover, .nav-icon:focus {
   fill: var(--accent-color);
   cursor: pointer;
 }
@@ -457,24 +464,12 @@ h3 {
   height: 24px;
 }
 
-.nav-logo {
-  font-family: Raleway, sans-serif;
-  color: var(--title-text-color);
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
-  transition: color var(--primary-transition);
-}
-
 .link.current {
   transition: color var(--primary-transition);
   color: var(--accent-color);
 }
 
-.link.current:hover,
-.link.current:focus {
+.link.current:hover, .link.current:focus {
   color: var(--accent-color);
 }
 
@@ -516,12 +511,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url('../images/hero.jpg');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -635,8 +625,7 @@ h3 {
 }
 
 .members-item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   max-width: 270px;
   border-radius: 0px 0px 4px 4px;
   text-align: center;
@@ -693,12 +682,10 @@ h3 {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: fill var(--primary-transition),
-    border-color var(--primary-transition);
+  transition: fill var(--primary-transition), border-color var(--primary-transition);
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-icon:hover, .clients-icon:focus {
   border-color: var(--accent-color);
 }
 
@@ -742,16 +729,13 @@ h3 {
   border: 1px;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: color var(--primary-transition),
-    background-color var(--primary-transition);
+  transition: color var(--primary-transition), background-color var(--primary-transition);
 }
 
-.categories .button:hover,
-.categories .button:focus {
+.categories .button:hover, .categories .button:focus {
   color: var(--text-accent-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .work-list {
@@ -773,10 +757,8 @@ h3 {
   transition: box-shadow var(--primary-transition);
 }
 
-.work-list-item:hover,
-.work-list-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.work-list-item:hover, .work-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-list-item:nth-child(3n) {
@@ -864,8 +846,7 @@ h3 {
   transition: color var(--primary-transition);
 }
 
-.footer-info .footer-address:hover,
-.footer-info .footer-address:focus {
+.footer-info .footer-address:hover, .footer-info .footer-address:focus {
   color: var(--accent-color);
 }
 
@@ -876,8 +857,7 @@ h3 {
   transition: color var(--primary-transition);
 }
 
-.footer-info .footer-contacts:hover,
-.footer-info .footer-contacts:focus {
+.footer-info .footer-contacts:hover, .footer-info .footer-contacts:focus {
   color: var(--accent-color);
 }
 
@@ -909,8 +889,7 @@ h3 {
   transition: background-color var(--primary-transition);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social-link:hover, .footer-social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -926,9 +905,5 @@ h3 {
 
 .footer-icons-items + .footer-icons-items {
   margin-left: 10px;
-}
-
-.logo-white {
-  color: var(--text-accent-color);
 }
 /*# sourceMappingURL=main.css.map */
