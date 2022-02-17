@@ -1,23 +1,29 @@
-.client.section {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
   justify-content: space-between;
 }
-.client.section-title {
+.clients__title {
   margin-bottom: 50px;
 }
-.clients-list {
+.clients__list {
   display: flex;
 }
 
-.clients-item {
+.clients__item {
   max-width: 170px;
   &:not(:last-child) {
     margin-right: 30px;
   }
+  &:hover,
+  &:focus {
+    .clients__svg {
+      fill: var(--accent-color);
+    }
+  }
 }
 
-.clients-icon {
+.clients__icon {
   display: block;
   padding: 16px 32px;
   color: #afb1b8;
@@ -28,14 +34,11 @@
   &:hover,
   &:focus {
     border-color: var(--accent-color);
+    fill: var(--accent-color);
   }
 }
 
-.clients-svg {
+.clients__svg {
   fill: currentColor;
   transition: fill var(--primary-transition);
-  .clients-icon:hover &,
-  .clients-icon:focus & {
-    fill: var(--accent-color);
-  }
 }

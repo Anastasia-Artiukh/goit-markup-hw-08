@@ -6,16 +6,16 @@
   margin-right: 32px;
   margin-bottom: 30px;
 }
-.social-items:not(first-child) {
+.social__items:not(first-child) {
   margin-right: 10px;
 }
-.social-links {
-  width: 44px;
-  height: 44px;
+.social__links {
   display: flex;
-  border-radius: 50%;
   justify-content: center;
   align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   fill: #afb1b8;
   transition: fill var(--primary-transition),
     background-color var(--primary-transition);

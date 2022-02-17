@@ -1,16 +1,17 @@
-.members.section {
+.members {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--button-background-color);
 }
-.members-text {
-  font-size: 16px;
+.members__title {
+  padding-bottom: 10px;
+  margin-bottom: 50px;
 }
-.members-list {
+.members__list {
   display: flex;
 }
 
-.members-item {
+.members__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   max-width: 270px;
@@ -21,18 +22,18 @@
     margin-right: 30px;
   }
 }
-.members.section-title {
-  margin-bottom: 50px;
+.members__box {
+  padding-top: 30px;
+  padding-bottom: 16px;
 }
-.members-title {
+.members__name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.12;
-  letter-spacing: 0.03em;
-  padding-bottom: 10px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 10px;
 }
-.members-box {
-  padding-top: 30px;
-  padding-bottom: 16px;
+.members__text {
+  font-size: 16px;
 }
