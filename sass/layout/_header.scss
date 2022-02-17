@@ -1,5 +1,7 @@
 .page-header {
   border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
 }
 .main-nav {
   display: flex;
@@ -60,8 +62,8 @@
 .contacts-nav__link {
   display: flex;
   align-items: center;
-  padding-top: 38px;
-  padding-bottom: 26px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   text-decoration: none;
   font-style: normal;
