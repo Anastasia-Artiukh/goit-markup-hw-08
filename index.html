@@ -446,48 +446,50 @@
 </main>
 
     <!--Футер-->
-<footer class="footer section">
-<div class="footer container">
-<div class="footer-left">    
-<nav class="footer nav">
-    <a href="./index.html" class="nav-logo">
-        <span class="nav-logo__basic">Web</span><span class="nav-logo__accent">Studio</span></a></nav>
-<address>                
+<footer class="footer">
+<div class="footer-wrap container">
+<div class="footer-start">    
+<nav class="footer-nav">
+    <a href="./index.html" class="footer-nav__logo nav-logo">
+        <span class="nav-logo__basic">Web</span><span class="nav-logo__accent">Studio</span></a>
+    </nav>
+<address class="address">                
 <ul class="footer-info">
-    <li class="footer-info-item"><a href="" class="footer-address">г. Киев, пр-т Леси Украинки, 26</a></li>
-    <li class="footer-info-item"><a href="mailto:info@example.com" class="footer-contacts">info@example.com</a></li>
-    <li class="footer-info-item"><a href="tel:+380991111111" 
-        class="footer-contacts">+38 099 111 11 11</a></li>
+    <li class="footer-info__item"><a href="" class="footer-info__address">г. Киев, пр-т Леси Украинки, 26</a></li>
+    <li class="footer-info__item"><a href="mailto:info@example.com" class="footer-info__contacts">info@example.com</a></li>
+    <li class="footer-info__item"><a href="tel:+380991111111" 
+        class="footer-info__contacts">+38 099 111 11 11</a></li>
         </ul>
 </address>  
 </div>
-<div class="footer-icons">
-<span class="join">Присоединяйтесь</span>
-<ul class="footer-icons-list">
-    <li class="footer-icons-items">
-        <a class="footer-social-link" href="">
-            <svg class="footer-social-icons" width="20" height="20">
+
+<div class="footer-social">
+<span class="footer-social__label">Присоединяйтесь</span>
+<ul class="social-list">
+    <li class="social-list__items">
+        <a class="social-list__link" href="">
+            <svg class="social-list__icons" width="20" height="20">
                 <use href="images/icons.svg#icon-instagram"></use>
             </svg>
         </a>
     </li>
-    <li class="footer-icons-items">
-        <a class="footer-social-link" href="">
-            <svg class="footer-social-icons" width="20" height="20">
+    <li class="social-list__items">
+        <a class="social-list__link" href="">
+            <svg class="social-list__icons" width="20" height="20">
                 <use href="images/icons.svg#icon-twitter"></use>
             </svg>
         </a>
     </li>
-    <li class="footer-icons-items">
-        <a class="footer-social-link" href="">
-            <svg class="footer-social-icons" width="20" height="20">
+    <li class="social-list__items">
+        <a class="social-list__link" href="">
+            <svg class="social-list__icons" width="20" height="20">
                 <use href="images/icons.svg#icon-facebook"></use>
             </svg>
         </a>
     </li>
-    <li class="footer-icons-items">
-        <a class="footer-social-link" href="">
-            <svg class="footer-social-icons" width="20" height="20">
+    <li class="social-list__items">
+        <a class="social-list__link" href="">
+            <svg class="social-list__icons" width="20" height="20">
                 <use href="images/icons.svg#icon-linkedin"></use>
             </svg>
         </a>
@@ -496,24 +498,25 @@
 </div>
 
 <div class="subscription">
-    <p class="subscription-title">Подпишитесь на рассылку</p>
-    <div class="subscription-form">
-    <form>
-        <input type="email" class="subscription-input" placeholder="E-mail">
+    <p class="subscription__title">Подпишитесь на рассылку</p>
+    <div class="subscription__wrap">
+    <form class="subscription__form">
+        <input type="email" class="subscription__input" placeholder="E-mail">
     </form>
     <button type="button" class="subscription-button">
         Подписаться
         <svg
-            class="letter-icon"
+            class="subscription-button__icon"
             width="24"
             height="24"
         >
-            <use href="images/icons.svg#icon-letter"></use>
+            <use href="images/icons.svg#icon-letter">
+
+            </use>
         </svg>
     </button>
     </div>
 </div>
-
 </div>
 </footer>
 
@@ -521,9 +524,9 @@
 <!-- МОДАЛКА -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="modal-button" data-modal-close >
+        <button type="button" class="modal__button" data-modal-close >
             <svg
-                class="modal-button-icon"
+                class="modal__icon"
                 width="11"
                 height="11"
             >
@@ -532,18 +535,18 @@
         </button>
 
         <!-- Форма -->
-        <p class="modal-title">
+        <p class="modal__title">
             Оставьте свои данные, мы вам перезвоним
         </p>
+        <form class="modal__form">
 
-        <form>
-            <div class="modal-field">
-            <label class="modal-label" for="user-name">Имя</label>
+            <div class="modal__field">
+            <label class="modal__label" for="user-name">Имя</label>
             
-            <div class="input-wrapper user">
-                <input type="text" class="modal-input" name="user-name" required id="user-name" >
+            <div class="input-wrapper">
+                <input type="text" class="input" name="user-name" required id="user-name" >
                 <svg
-                    class="modal-icon"
+                    class="input__icon"
                     width="18"
                     height="18"
                 >
@@ -552,12 +555,12 @@
             </div>
             </div>
 
-            <div class="modal-field">
-                <label class="modal-label" for="user-tel">Телефон</label>
-                <div class="input-wrapper user">
-                <input type="tel" class="modal-input" name="user-tel" required id="user-tel">
+            <div class="modal__field">
+                <label class="modal__label" for="user-tel">Телефон</label>
+                <div class="input-wrapper">
+                <input type="tel" class="input" name="user-tel" required id="user-tel">
                 <svg
-                    class="modal-icon"
+                    class="input__icon"
                     width="18"
                     height="18"
                 >
@@ -567,12 +570,12 @@
                 
             </div>
 
-            <div class="modal-field">
-                <label class="modal-label" for="user-mail">Почта</label>
-                <div class="input-wrapper user">
-                <input type="email" class="modal-input" name="user-mail" required id="user-mail">
+            <div class="modal__field">
+                <label class="modal__label" for="user-mail">Почта</label>
+                <div class="input-wrapper">
+                <input type="email" class="input" name="user-mail" required id="user-mail">
                 <svg
-                    class="modal-icon"
+                    class="input__icon"
                     width="18"
                     height="18"
                 >
@@ -581,17 +584,17 @@
                 </div>
             </div>
 
-            <div class="modal-field">
-                <label class="modal-label" for="user-text">Комментарий</label>
-                <textarea class="modal-textarea" name="user-text" id="user-text" placeholder="Введите текст"></textarea>
+            <div class="modal__field">
+                <label class="modal__label" for="user-text">Комментарий</label>
+                <textarea class="modal__textarea" name="user-text" id="user-text" placeholder="Введите текст"></textarea>
             </div>
 
-        <div class="modal-checkbox">
+        <div class="modal__checkbox">
             <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden">
-            <label for="policy" class="modal-check-text">
-                <span class="modal-check-icon" >
+            <label for="policy" class="modal-check__text">
+                <span class="modal-check__icon" >
                 <svg
-                    class="check-icon"
+                    class="modal-check__svg"
                     width="16"
                     height="15"
                 >
@@ -601,12 +604,10 @@
                 Соглашаюсь с рассылкой и принимаю &nbsp <a class="conditions" href="">Условия договора</a>          
                 </label>
         </div>
-        <div class="modal-submit-button" >
+        <div class="modal__submit-button" >
         <button class="submit-button" type="submit">Отправить</button>
         </div>
         </form>
-
-
     </div>
 </div>
 
