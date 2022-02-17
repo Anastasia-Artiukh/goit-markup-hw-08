@@ -27,7 +27,6 @@
         rel="stylesheet"
         href="./css/main.min.css"
     />
-
 </head>
 <body class="page">
 <header class="page-header">
@@ -84,146 +83,154 @@
             </ul>
         </nav>
     </div>
-</header>
-
-        
+</header>       
 <main>
-    <section class="portfolio section">
-        <div class="portfolio container">
+    <section class="portfolio">
+        <div class="container">
         <!--Заголовок для семантики-->
         <h1 class="visually-hidden">Портфолио наших работ</h1>       
         <ul class="categories">
-            <li class="categories-item"><button type="button" class="button">Все</button></li>
-            <li class="categories-item"><button type="button" class="button">Веб-сайты</button></li>
-            <li class="categories-item"><button type="button" class="button">Приложения</button></li>
-            <li class="categories-item"><button type="button" class="button">Дизайн</button></li>
-            <li class="categories-item"><button type="button" class="button">Маркетинг</button></li>
+            <li class="categories__item">
+                <button type="button" class="button categories__button">Все</button>
+            </li>
+            <li class="categories__item">
+                <button type="button" class="button categories__button">Веб-сайты</button>
+            </li>
+            <li class="categories__item">
+                <button type="button" class="button categories__button">Приложения</button>
+            </li>
+            <li class="categories__item">
+                <button type="button" class="button categories__button">Дизайн</button>
+            </li>
+            <li class="categories__item">
+                <button type="button" class="button categories__button">Маркетинг</button>
+            </li>
         </ul>
             
         <ul class="work-list">
-            <li class="work-list-item">
-                <a class="work-list-link" href="" >
-                <div class="work-list-wrapper">
-                <img class="work-list-img" src="./images/portfolio/tehno.jpg" alt="Технокряк" width="370">
-                <p class="work-list-wrapper-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+            <li class="work-list__item">
+                <a class="work-list__link" href="" >
+                <div class="overlay-wrapper">
+                <img class="work-list__img" src="./images/portfolio/tehno.jpg" alt="Технокряк" width="370">
+                <p class="overlay-wrapper__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                 шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
-                <div class="work-list-box">
-                <h2 class="work-list-title">Технокряк</h2>
-                <p class="work-list-text">Веб-сайт</p>
+                <div class="work-list__box">
+                <h2 class="work-list__title">Технокряк</h2>
+                <p class="work-list__text">Веб-сайт</p>
                 </div>                
                 </a>
             </li>
-            <li class="work-list-item"> 
-                <a class="work-list-link" href="">
-                    <div class="work-list-wrapper">
-                <img class="work-list-img" src="./images/portfolio/orlean.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-                <p class="work-list-wrapper-text">Технокряк это современная площадка распространения коронавируса. Компании используют
+            <li class="work-list__item"> 
+                <a class="work-list__link" href="">
+                    <div class="overlay-wrapper">
+                <img class="work-list__img" src="./images/portfolio/orlean.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                <p class="overlay-wrapper__text">Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
-                <div class="work-list-box">
-                <h2 class="work-list-title">Постер New Orlean vs Golden Star</h2>
-                <p class="work-list-text">Дизайн</p>
+                <div class="work-list__box">
+                <h2 class="work-list__title">Постер New Orlean vs Golden Star</h2>
+                <p class="work-list__text">Дизайн</p>
                 </div>
                 </a>
             </li>
-            <li class="work-list-item"> 
-                <a class="work-list-link" href="" >
-                <div class="work-list-wrapper">
-                <img class="work-list-img" src="./images/portfolio/restoraunt.jpg" alt="Ресторан Seafood" width="370">
-                <p class="work-list-wrapper-text">Технокряк это современная площадка распространения коронавируса. Компании используют
-                    эту платформу для цифрового
-                    шпионажа и атак на защищённые сервера конкурентов.</p>
-                    </div>
-                <div class="work-list-box">
-                <h2 class="work-list-title">Ресторан Seafood</h2>
-                <p class="work-list-text">Приложение</p>
-                </div>
-                </a>
-            </li>
-            <li class="work-list-item">
-                <a class="work-list-link" href="" >
-                    <div class="work-list-wrapper">
-                <img class="work-list-img" src="./images/portfolio/prime.jpg" alt="Проект Prime" width="370">
-                <p class="work-list-wrapper-text">Технокряк это современная площадка распространения коронавируса. Компании используют
+            <li class="work-list__item"> 
+                <a class="work-list__link" href="" >
+                <div class="overlay-wrapper">
+                <img class="work-list__img" src="./images/portfolio/restoraunt.jpg" alt="Ресторан Seafood" width="370">
+                <p class="overlay-wrapper__text">Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
-                <div class="work-list-box">
-                <h2 class="work-list-title">Проект Prime</h2>
-                <p class="work-list-text">Маркетинг</p>
+                <div class="work-list__box">
+                <h2 class="work-list__title">Ресторан Seafood</h2>
+                <p class="work-list__text">Приложение</p>
                 </div>
                 </a>
             </li>
-            <li class="work-list-item">
-                <a class="work-list-link" href="" > 
-                    <div class="work-list-wrapper">
-                <img class="work-list-img" src="./images/portfolio/box.jpg" alt="Проект Boxes" width="370">
-                <p class="work-list-wrapper-text">Технокряк это современная площадка распространения коронавируса. Компании используют
-                    эту платформу для цифрового
-                    шпионажа и атак на защищённые сервера конкурентов.</p>
-                </div>
-                <div class="work-list-box">
-                <h2 class="work-list-title">Проект Boxes</h2>
-                <p class="work-list-text">Приложение</p>
-                </div>
-                </a>
-            </li>
-            <li class="work-list-item"> 
-                <a class="work-list-link" href="" >
-                    <div class="work-list-wrapper">
-                <img class="work-list-img" src="./images/portfolio/inspirations.jpg" alt="Веб-сайт Inspiration has no Borders" width="370">
-                <p class="work-list-wrapper-text">Технокряк это современная площадка распространения коронавируса. Компании используют
+            <li class="work-list__item">
+                <a class="work-list__link" href="" >
+                    <div class="overlay-wrapper">
+                <img class="work-list__img" src="./images/portfolio/prime.jpg" alt="Проект Prime" width="370">
+                <p class="overlay-wrapper__text">Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
-                <div class="work-list-box">
-                <h2 class="work-list-title">Inspiration has no Borders</h2>
-                <p class="work-list-text">Веб-сайт</p>
+                <div class="work-list__box">
+                <h2 class="work-list__title">Проект Prime</h2>
+                <p class="work-list__text">Маркетинг</p>
                 </div>
                 </a>
             </li>
-            <li class="work-list-item">
-                    <a class="work-list-link" href="" > 
-                    <div class="work-list-wrapper">
-                <img class="work-list-img" src="./images/portfolio/limited.jpg" alt="Издание Limited Edition" width="370">
-                <p class="work-list-wrapper-text">Технокряк это современная площадка распространения коронавируса. Компании используют
+            <li class="work-list__item">
+                <a class="work-list__link" href="" > 
+                    <div class="overlay-wrapper">
+                <img class="work-list__img" src="./images/portfolio/box.jpg" alt="Проект Boxes" width="370">
+                <p class="overlay-wrapper__text">Технокряк это современная площадка распространения коронавируса. Компании используют
+                    эту платформу для цифрового
+                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                </div>
+                <div class="work-list__box">
+                <h2 class="work-list__title">Проект Boxes</h2>
+                <p class="work-list__text">Приложение</p>
+                </div>
+                </a>
+            </li>
+            <li class="work-list__item"> 
+                <a class="work-list__link" href="" >
+                    <div class="overlay-wrapper">
+                <img class="work-list__img" src="./images/portfolio/inspirations.jpg" alt="Веб-сайт Inspiration has no Borders" width="370">
+                <p class="overlay-wrapper__text">Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
-                <div class="work-list-box">
-                <h2 class="work-list-title">Издание Limited Edition</h2>
-                <p class="work-list-text">Дизайн</p>
+                <div class="work-list__box">
+                <h2 class="work-list__title">Inspiration has no Borders</h2>
+                <p class="work-list__text">Веб-сайт</p>
                 </div>
                 </a>
             </li>
-            <li class="work-list-item"> 
-                    <a class="work-list-link" href="" >
-                    <div class="work-list-wrapper">
-                <img class="work-list-img" src="./images/portfolio/lab.jpg" alt="Проект LAB" width="370">
-                <p class="work-list-wrapper-text">Технокряк это современная площадка распространения коронавируса. Компании используют
+            <li class="work-list__item">
+                    <a class="work-list__link" href="" > 
+                    <div class="overlay-wrapper">
+                <img class="work-list__img" src="./images/portfolio/limited.jpg" alt="Издание Limited Edition" width="370">
+                <p class="overlay-wrapper__text">Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
-                <div class="work-list-box">
-                <h2 class="work-list-title">Проект LAB</h2>
-                <p class="work-list-text">Маркетинг</p>
+                <div class="work-list__box">
+                <h2 class="work-list__title">Издание Limited Edition</h2>
+                <p class="work-list__text">Дизайн</p>
                 </div>
                 </a>
             </li>
-            <li class="work-list-item"> 
+            <li class="work-list__item"> 
+                    <a class="work-list__link" href="" >
+                    <div class="overlay-wrapper">
+                <img class="work-list__img" src="./images/portfolio/lab.jpg" alt="Проект LAB" width="370">
+                <p class="overlay-wrapper__text">Технокряк это современная площадка распространения коронавируса. Компании используют
+                    эту платформу для цифрового
+                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                    </div>
+                <div class="work-list__box">
+                <h2 class="work-list__title">Проект LAB</h2>
+                <p class="work-list__text">Маркетинг</p>
+                </div>
+                </a>
+            </li>
+            <li class="work-list__item"> 
                 
-                <a class="work-list-link" href="" >
-                    <div class="work-list-wrapper">
-                <img class="work-list-img" src="./images/portfolio/business.jpg" alt="Приложение Growing Business" width="370">
-                <p class="work-list-wrapper-text">Технокряк это современная площадка распространения коронавируса. Компании используют
+                <a class="work-list__link" href="" >
+                    <div class="overlay-wrapper">
+                <img class="work-list__img" src="./images/portfolio/business.jpg" alt="Приложение Growing Business" width="370">
+                <p class="overlay-wrapper__text">Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
-                <div class="work-list-box">
-                <h2 class="work-list-title">Growing Business</h2>
-                <p class="work-list-text">Приложение</p>
+                <div class="work-list__box">
+                <h2 class="work-list__title">Growing Business</h2>
+                <p class="work-list__text">Приложение</p>
                 </div>
                 </a>
             </li>
