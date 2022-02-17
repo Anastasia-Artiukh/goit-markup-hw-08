@@ -1,14 +1,4 @@
-.hero-title {
-  margin-bottom: 30px;
-  color: var(--text-accent-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.hero.section {
+.hero {
   max-width: 1600px;
   height: 600px;
   text-align: center;
@@ -28,7 +18,17 @@
   background-size: cover;
 }
 
-.hero-button {
+.hero__title {
+  margin-bottom: 30px;
+  color: var(--text-accent-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero__button {
   display: inline-block;
   color: var(--text-accent-color);
   background-color: var(--accent-color);

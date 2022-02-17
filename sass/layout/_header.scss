@@ -14,11 +14,19 @@
 }
 
 .site-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   color: var(--title-text-color);
   text-decoration: none;
   transition: color var(--primary-transition);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
+
 .site-nav__link.current {
   color: var(--accent-color);
   transition: color var(--primary-transition);
@@ -83,14 +91,4 @@
 .phone-icon {
   width: 15px;
   height: 24px;
-}
-
-.site-nav__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
 }

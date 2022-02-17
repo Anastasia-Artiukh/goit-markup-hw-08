@@ -404,10 +404,17 @@ h3 {
 }
 
 .site-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   color: var(--title-text-color);
   text-decoration: none;
   transition: color var(--primary-transition);
+}
+
+.site-nav__link:hover, .site-nav__link:focus {
+  color: var(--accent-color);
 }
 
 .site-nav__link.current {
@@ -479,27 +486,7 @@ h3 {
   height: 24px;
 }
 
-.site-nav__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.site-nav__link:hover, .site-nav__link:focus {
-  color: var(--accent-color);
-}
-
-.hero-title {
-  margin-bottom: 30px;
-  color: var(--text-accent-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.hero.section {
+.hero {
   max-width: 1600px;
   height: 600px;
   text-align: center;
@@ -514,7 +501,17 @@ h3 {
   background-size: cover;
 }
 
-.hero-button {
+.hero__title {
+  margin-bottom: 30px;
+  color: var(--text-accent-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero__button {
   display: inline-block;
   color: var(--text-accent-color);
   background-color: var(--accent-color);
