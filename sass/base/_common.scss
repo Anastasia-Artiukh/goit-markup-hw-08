@@ -1,7 +1,12 @@
 body {
-  background-color: var(--primary-background-color);
+  background-color: salmon;
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.7;
 }
+
+main {
+  background-color: aquamarine;
+}
+// var(--primary-background-color)
