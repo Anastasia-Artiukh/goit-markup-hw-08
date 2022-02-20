@@ -5,7 +5,9 @@ body {
   font-size: 14px;
   line-height: 1.7;
 }
-
+body.modal-open {
+  overflow: hidden;
+}
 img {
   display: block;
   width: 100%;
