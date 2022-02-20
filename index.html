@@ -22,8 +22,7 @@
     <!-- Нормализация стилей в браузерах -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <!-- Подключение стилей -->
-    <link rel="stylesheet" href="./css/styles.css">
-    <link
+        <link
         rel="stylesheet"
         href="./css/main.min.css"
     />
@@ -33,7 +32,8 @@
 <!--Хедер-->
     <!-- <header class="page-header">
     <div class="container">        
-    <nav class="main-nav">
+    
+        <div class="mobile-header">
 <a href="./index.html" class="nav-logo">
     <span class="nav-logo__basic">Web</span>Studio</a>
     <button type="button" class="menu-button" aria-expanded="false" data-menu-button ><svg
@@ -44,12 +44,16 @@
         <use class="icon-cross" href="images/icons.svg#icon-cross"></use>
         <use class="icon-menu" href="images/icons.svg#icon-menu"></use>
     </svg></button>
+    </div>
+
+    <div class="desktop-nav" data-menu>
+    <nav class="main-nav">
 <ul class="site-nav">
     <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
     <li class="site-nav__item"><a href="./portfolio.html" class=site-nav__link>Портфолио</a></li>
     <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
 </ul>    
-
+</nav>
     <ul class="contacts-nav">
     <li class="contacts-nav__item">            
         <a href="mailto:info@devstudio.com" class="contacts-nav__link">
@@ -65,13 +69,13 @@
             +38 096 111 11 11</a>            
     </li>       
 </ul>
-</nav> 
+</div>
 </div>
 </header> -->
 
 <main>
     <!--Герой-->    
-    <section class="hero">
+    <!-- <section class="hero">
         <div class="hero__container container">    
         <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
         <button 
@@ -79,7 +83,7 @@
         class="button hero__button" data-modal-open>
         Заказать услугу</button>
         </div>
-    </section>
+    </section> -->
     
     <!--Преимущества-->
     <!-- <section class="features">
@@ -141,17 +145,83 @@
         <h2 class="activity__title section-title">Чем мы занимаемся</h2>        
         <ul class="activity__list">
         <li class="activity__item">
-            <img class="activity__img" src="./images/notebook.jpg" alt="Ноутбук" width="370">
+                                <picture>
+                        <source
+                            srcset="
+                                ./images/desktop/whattodo-1-1200@1x.webp 1x,
+                                ./images/desktop/whattodo-1-1200@2x.webp 2x"
+                            type="image/webp"
+                            media="(min-width: 1200px)"
+                        />                    
+                        <source
+                            srcset="
+                                ./images/desktop/whattodo-1-1200@1x.jpg 1x,
+                                ./images/desktop/whattodo-1-1200@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                        />
+                    
+                        <img
+                            src="./images/desktop/whattodo-1-1200@1x.jpg"
+                            loading="lazy"
+                            alt="Десктопные приложения"
+                            width="370"
+                            height="294"
+                        />
+                    </picture>
             <p class="activity__text">Десктопные приложения</p>
         </li>
 
-        <li class="activity__item">
-            <img class="activity__img" src="./images/mobilephone.jpg" alt="Телефон" width="370">
+        <li class="activity__item">           
+            <picture>
+                <source
+                    srcset="
+                                            ./images/desktop/whattodo-2-1200@1x.webp 1x,
+                                            ./images/desktop/whattodo-2-1200@2x.webp 2x"
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                />
+                <source
+                    srcset="
+                                            ./images/desktop/whattodo-2-1200@1x.jpg 1x,
+                                            ./images/desktop/whattodo-2-1200@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                />
+            
+                <img
+                    src="./images/desktop/whattodo-2-1200@1x.jpg"
+                    loading="lazy"
+                    alt="Мобильные приложения"
+                    width="370"
+                    height="294"
+                />
+            </picture>
             <p class="activity__text">Мобильные приложения</p>
         </li>
 
-        <li class="activity__item">
-            <img class="activity__img" src="./images/tablet.jpg" alt="Планшет" width="370">
+        <li class="activity__item">            
+            <picture>
+                <source
+                    srcset="
+                            ./images/desktop/whattodo-3-1200@1x.webp 1x,
+                            ./images/desktop/whattodo-3-1200@2x.webp 2x"
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                />
+                <source
+                    srcset="
+                            ./images/desktop/whattodo-3-1200@1x.jpg 1x,
+                            ./images/desktop/whattodo-3-1200@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                />
+            
+                <img
+                    src="./images/desktop/whattodo-3-1200@1x.jpg"
+                    loading="lazy"
+                    alt="Дизайнерские решения"
+                    width="370"
+                    height="294"
+                />
+            </picture>
             <p class="activity__text">Дизайнерские решения</p>
         </li>
         </ul>
