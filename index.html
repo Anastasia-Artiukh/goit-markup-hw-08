@@ -30,118 +30,207 @@
 
 <body class="page">
 <!--Хедер-->
-    <!-- <header class="page-header">
-    <div class="container">        
-    
-        <div class="mobile-header">
-<a href="./index.html" class="nav-logo">
-    <span class="nav-logo__basic">Web</span>Studio</a>
-    <button type="button" class="menu-button" aria-expanded="false" data-menu-button ><svg
-        aria-label="Переключатель мобильного меню"
-        width="40"
-        height="40"
-    >
-        <use class="icon-cross" href="images/icons.svg#icon-cross"></use>
-        <use class="icon-menu" href="images/icons.svg#icon-menu"></use>
-    </svg></button>
-    </div>
+    <header class="page-header">
+        <div class="page-header__container container">
+            <a
+                href="./index.html"
+                class="nav-logo"
+            >
+                <span class="nav-logo__basic">Web</span>Studio</a>
+            <button
+                type="button"
+                class="open-menu-btn button"
+            >
+                <svg
+                    class="open-menu-btn__icon"
+                    width="40"
+                    height="40"
+                >
+                    <use href="images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
 
-    <div class="desktop-nav" data-menu>
-    <nav class="main-nav">
-<ul class="site-nav">
-    <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
-    <li class="site-nav__item"><a href="./portfolio.html" class=site-nav__link>Портфолио</a></li>
-    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-</ul>    
-</nav>
+            
+<div class="mob-menu is-hidden">
+    <div class="container">
+        <div class="mob-menu-top">
+            <button
+                type="button"
+                class="close-menu-btn"
+            ><svg
+                class="close-menu-btn__icon"
+                width="40"
+                height="40"
+            >
+                <use href="images/icons.svg#icon-cross"></use>
+            </svg>
+        </button>
+
+        <ul class="mob-menu-list list">
+            <li class="mob-menu-list__item">
+                <a href="" class="mob-menu-list__link">Студия                    
+                </a>
+            </li>
+            <li class="mob-menu-list__item">
+                <a href="" class="mob-menu-list__link">Портфолио                    
+                </a>
+            </li>
+            <li class="mob-menu-list__item">
+                <a href="" class="mob-menu-list__link">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+        </div>
+
+        <div class="mob-menu-bottom">
+            <div class="mob-menu-connect">
+                <div class="mob-menu-connect__number">
+                    <a
+                    class="mob-menu-connect__tel"
+                    href="tel:+380961111111"
+                >+38 096 111 11 11</a></div>
+
+                <div>
+                    <a
+                    class="mob-menu-connect__email"
+                    href="mailto:info@devstudio.com"                    
+                >
+                    info@devstudio.com</a></div>
+        <div>
+        <ul class="mob-menu-soc" >
+            <li class="mob-menu-soc__item"><a class="mob-menu-soc__link" href="">Instagram</a></li>
+            <li class="mob-menu-soc__item"><a class="mob-menu-soc__link" href="">Twitter</a></li>
+            <li class="mob-menu-soc__item"><a class="mob-menu-soc__link" href="">Facebook</a></li>
+            <li class="mob-menu-soc__item"><a class="mob-menu-soc__link" href="">LinkedIn</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<nav class="main-nav ">             
+    <ul class="site-nav">
+        <li class="site-nav__item"><a
+            href="./index.html"
+            class="site-nav__link current"
+        >Студия</a></li>
+        <li class="site-nav__item"><a
+            href="./portfolio.html"
+            class=site-nav__link
+        >Портфолио</a></li>
+        <li class="site-nav__item"><a
+            href=""
+            class="site-nav__link"
+        >Контакты</a></li>
+    </ul>
+
     <ul class="contacts-nav">
-    <li class="contacts-nav__item">            
-        <a href="mailto:info@devstudio.com" class="contacts-nav__link">
-            <svg class="contacts-nav__icon email-icon" width="16" height="12">
-            <use href="images/icons.svg#icon-email"></use>
+    <li class="contacts-nav__item">
+        <a
+            href="mailto:info@devstudio.com"
+            class="contacts-nav__link"
+        >
+            <svg
+                class="contacts-nav__icon email-icon"
+                width="16"
+                height="12"
+            >
+                <use href="images/icons.svg#icon-email"></use>
             </svg>info@devstudio.com</a>
     </li>
     <li class="contacts-nav__item">
-        <a href="tel:+380961111111" class="contacts-nav__link">
-            <svg class="contacts-nav__icon phone-icon" width="10" height="16">
+        <a
+            href="tel:+380961111111"
+            class="contacts-nav__link"
+        >
+            <svg
+                class="contacts-nav__icon phone-icon"
+                width="10"
+                height="16"
+            >
                 <use href="images/icons.svg#icon-phone"></use>
             </svg>
-            +38 096 111 11 11</a>            
-    </li>       
+            +38 096 111 11 11</a>
+    </li>
 </ul>
+</nav>
 </div>
-</div>
-</header> -->
+</header>
 
 <main>
-    <!--Герой-->    
-    <!-- <section class="hero">
-        <div class="hero__container container">    
-        <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
-        <button 
-        type="button" 
-        class="button hero__button" data-modal-open>
-        Заказать услугу</button>
+<!--Герой-->    
+<section class="hero">
+<div class="hero__container container">    
+<h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
+<button 
+type="button" 
+class="button hero__button" data-modal-open>
+Заказать услугу</button>
+</div>
+</section>
+
+<!--Преимущества-->
+<section class="features">
+<div class="container">        
+<h2 class="section-title visually-hidden">Преимущества</h2>
+<ul class="features-list">
+    <li class="features-list__items">
+        <div class="features-icon">
+        <svg width="70" height="70">
+            <use href="images/icons.svg#icon-features-01"></use>
+        </svg>
         </div>
-    </section> -->
-    
-    <!--Преимущества-->
-    <!-- <section class="features">
-        <div class="container">        
-        <h2 class="section-title visually-hidden">Преимущества</h2>
-        <ul class="features-list">
-            <li class="features-list__items">
-                <div class="features-icon">
-                <svg width="70" height="70">
-                    <use href="images/icons.svg#icon-features-01"></use>
-                </svg>
-                </div>
-                <h3 class="features-list__title">Внимание к деталям</h3>
-                <p class="features-list__text"> Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-            </li>   
-            <li class="features-list__items">
-                <div class="features-icon">
-                    <svg
-                        width="70"
-                        height="70"
-                    >
-                        <use href="images/icons.svg#icon-features-02"></use>
-                    </svg>
-                </div>
-                <h3 class="features-list__title">Пунктуальность</h3>
-                <p class="features-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-            </li>            
-            <li class="features-list__items">
-                <div class="features-icon">
-                    <svg
-                        width="70"
-                        height="70"
-                    >
-                        <use href="images/icons.svg#icon-features-03"></use>
-                    </svg>
-                </div>
-                <h3 class="features-list__title">Планирование</h3>
-                <p class="features-list__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-            </li>
-            <li class="features-list__items">
-                <div class="features-icon">
-                    <svg
-                        width="70"
-                        height="70"
-                    >
-                        <use href="images/icons.svg#icon-features-04"></use>
-                    </svg>
-                </div>
-                <h3 class="features-list__title">Современные технологии</h3>
-                <p class="features-list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-            </li>
-        </ul>
-        </div>        
-        </section>          -->
+        <h3 class="features-list__title">Внимание к деталям</h3>
+        <p class="features-list__text"> Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+    </li>   
+    <li class="features-list__items">
+        <div class="features-icon">
+            <svg
+                width="70"
+                height="70"
+            >
+                <use href="images/icons.svg#icon-features-02"></use>
+            </svg>
+        </div>
+        <h3 class="features-list__title">Пунктуальность</h3>
+        <p class="features-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+    </li>            
+    <li class="features-list__items">
+        <div class="features-icon">
+            <svg
+                width="70"
+                height="70"
+            >
+                <use href="images/icons.svg#icon-features-03"></use>
+            </svg>
+        </div>
+        <h3 class="features-list__title">Планирование</h3>
+        <p class="features-list__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+    </li>
+    <li class="features-list__items">
+        <div class="features-icon">
+            <svg
+                width="70"
+                height="70"
+            >
+                <use href="images/icons.svg#icon-features-04"></use>
+            </svg>
+        </div>
+        <h3 class="features-list__title">Современные технологии</h3>
+        <p class="features-list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+    </li>
+</ul>
+</div>        
+</section>         
 
         <!--Секция Activity-->
-        <!-- <section class="activity hidden-on-mobile ">
-        <div class="container">
+        <section class="activity hidden-on-mobile ">
+        <div class="activity__container container">
         <h2 class="activity__title section-title">Чем мы занимаемся</h2>        
         <ul class="activity__list">
         <li class="activity__item">
@@ -226,16 +315,15 @@
         </li>
         </ul>
         </div>        
-    </section> -->
+    </section>
 
         <!-- Наша команда-->
-    <section class="members">
+    <!-- <section class="members">
         <div class="container">
         <h2 class="members__title section-title">Наша команда</h2>
     <ul class="members__list">
-        <li class="members__item">        
-            <!-- <img src="./images/ihor.jpg" alt="Игорь Демьяненко" width="270"> -->
-            <picture>
+        <li class="members__item">    
+                <picture>
                 <source
                     srcset="
                                             ./images/desktop/team-1-1200@1x.webp 1x,
@@ -649,7 +737,7 @@
         </li>
     </ul>
     </div>
-    </section>
+    </section> -->
 
     <!-- Постоянные клиенты -->
     <!-- <section class="clients">
@@ -791,7 +879,7 @@
 
 
 <!-- МОДАЛКА -->
-<div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal container">
         <button type="button" class="modal__button" data-modal-close >
             <svg
@@ -801,10 +889,10 @@
             >
                 <use href="images/icons.svg#icon-close-button"></use>
             </svg>
-        </button>
+        </button> -->
 
         <!-- Форма -->
-        <p class="modal__title section-title">
+        <!-- <p class="modal__title section-title">
             Оставьте свои данные, мы вам перезвоним
         </p>
         <form class="modal__form">
@@ -881,7 +969,7 @@
         </div>
         </form>
     </div>
-</div>
+</div> -->
 
 <script src="./js/modal.js"></script>
 <script src="./js/menu.js"></script>
