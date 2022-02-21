@@ -102,7 +102,6 @@ h3 {
   justify-content: center;
   margin-left: 32px;
   margin-right: 32px;
-  margin-bottom: 30px;
 }
 
 .social__items:not(first-child) {
@@ -924,21 +923,14 @@ h3 {
 .members__list {
   display: block;
   text-align: center;
+  margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
   .members__list {
     display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .members__list {
-    justify-content: space-between;
-    align-content: space-between;
+    margin-right: -30px;
   }
 }
 
@@ -952,22 +944,14 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .members__item {
-    width: 45%;
-    flex-basis: 0.45;
-    margin: 0px 0px 30px;
+    width: calc(100% / 2 - 30px);
+    margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .members__item {
-    width: 270px;
-    margin: 0px;
-    margin-bottom: 0px;
-    flex-wrap: nowrap;
-    flex-basis: 0.25;
-  }
-  .members__item:nth-child(-n + 3) {
-    margin-right: 30px;
+    width: calc(100% / 4 - 30px);
   }
 }
 
