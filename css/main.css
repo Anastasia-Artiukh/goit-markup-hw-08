@@ -292,7 +292,7 @@ h3 {
   margin-right: 8px;
 }
 
-.modal-check:checked + .modal-check__text span {
+.modal-check:checked + .modal-check__text .modal-check__icon {
   background-color: var(--accent-color);
   border: none;
 }
@@ -452,6 +452,10 @@ h3 {
   margin-bottom: 32px;
 }
 
+.mob-menu-list__item:hover, .mob-menu-list__item:focus {
+  color: var(--accent-color);
+}
+
 .open-menu-btn {
   padding: 0;
   border: none;
@@ -461,6 +465,10 @@ h3 {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+
+.open-menu-btn:hover, .open-menu-btn:focus {
+  fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -478,6 +486,10 @@ h3 {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+
+.close-menu-btn:hover, .close-menu-btn:focus {
+  fill: var(--accent-color);
 }
 
 .mob-menu-list__link {

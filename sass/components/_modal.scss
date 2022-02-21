@@ -143,7 +143,7 @@
 .modal-check {
   margin-right: 8px;
 }
-.modal-check:checked + .modal-check__text span {
+.modal-check:checked + .modal-check__text .modal-check__icon {
   background-color: var(--accent-color);
   border: none;
 }

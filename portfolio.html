@@ -29,22 +29,122 @@
     />
 </head>
 <body class="page">
+
 <header class="page-header">
-    <div class="container nav">
-        <nav class="nav main-nav">
-            <a
-                href="./index.html"
-                class="nav-logo"
+    <div class="page-header__container container">
+        <a
+            href="./index.html"
+            class="nav-logo"
+        >
+            <span class="nav-logo__basic">Web</span>Studio</a>
+        <button
+            type="button"
+            class="open-menu-btn button"
+        >
+            <svg
+                class="open-menu-btn__icon"
+                width="40"
+                height="40"
             >
-                <span class="nav-logo__basic">Web</span>Studio</a>
+                <use href="images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
+
+
+        <div class="mob-menu is-hidden">
+            <div class="container">
+                <div class="mob-menu-top">
+                    <button
+                        type="button"
+                        class="close-menu-btn"
+                    ><svg
+                            class="close-menu-btn__icon"
+                            width="40"
+                            height="40"
+                        >
+                            <use href="images/icons.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-list__item">
+                            <a
+                                href="./index.html"
+                                class="mob-menu-list__link"
+                            >Студия
+                            </a>
+                        </li>
+                        <li class="mob-menu-list__item">
+                            <a
+                                href="./portfolio.html"
+                                class="mob-menu-list__link"
+                            >Портфолио
+                            </a>
+                        </li>
+                        <li class="mob-menu-list__item">
+                            <a
+                                href=""
+                                class="mob-menu-list__link"
+                            >
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mob-menu-bottom">
+                    <div class="mob-menu-connect">
+                        <div class="mob-menu-connect__number">
+                            <a
+                                class="mob-menu-connect__tel"
+                                href="tel:+380961111111"
+                            >+38 096 111 11 11</a>
+                        </div>
+
+                        <div>
+                            <a
+                                class="mob-menu-connect__email"
+                                href="mailto:info@devstudio.com"
+                            >
+                                info@devstudio.com</a>
+                        </div>
+                        <div>
+                            <ul class="mob-menu-soc">
+                                <li class="mob-menu-soc__item"><a
+                                        class="mob-menu-soc__link"
+                                        href=""
+                                    >Instagram</a></li>
+                                <li class="mob-menu-soc__item"><a
+                                        class="mob-menu-soc__link"
+                                        href=""
+                                    >Twitter</a></li>
+                                <li class="mob-menu-soc__item"><a
+                                        class="mob-menu-soc__link"
+                                        href=""
+                                    >Facebook</a></li>
+                                <li class="mob-menu-soc__item"><a
+                                        class="mob-menu-soc__link"
+                                        href=""
+                                    >LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <nav class="main-nav ">
             <ul class="site-nav">
                 <li class="site-nav__item"><a
                         href="./index.html"
-                        class="site-nav__link"
+                        class="site-nav__link "
                     >Студия</a></li>
                 <li class="site-nav__item"><a
                         href="./portfolio.html"
-                        class= "site-nav__link current"
+                        class="site-nav__link current"
                     >Портфолио</a></li>
                 <li class="site-nav__item"><a
                         href=""
@@ -83,7 +183,7 @@
             </ul>
         </nav>
     </div>
-</header>       
+</header>
 
 <main>
 
@@ -764,6 +864,7 @@ srcset="
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
 
