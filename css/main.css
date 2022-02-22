@@ -401,6 +401,7 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .page-header__container {
+    height: 80px;
     align-items: center;
     max-width: 768px;
     justify-content: space-between;
@@ -409,7 +410,6 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .page-header__container {
-    height: 80px;
     max-width: 1200px;
     justify-content: space-between;
   }
@@ -526,6 +526,7 @@ h3 {
 .mob-menu-soc {
   margin-top: 64px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-menu-soc__item {

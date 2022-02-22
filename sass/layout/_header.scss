@@ -11,12 +11,12 @@
   padding-bottom: 15px;
   position: relative;
   @media screen and (min-width: 768px) {
+    height: 80px;
     align-items: center;
     max-width: 768px;
     justify-content: space-between;
   }
   @media screen and (min-width: 1200px) {
-    height: 80px;
     max-width: 1200px;
     justify-content: space-between;
   }
@@ -101,6 +101,7 @@
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+
 .mob-menu-connect__number {
   margin-bottom: 32px;
 }
@@ -125,6 +126,7 @@
 .mob-menu-soc {
   margin-top: 64px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-menu-soc__item {
